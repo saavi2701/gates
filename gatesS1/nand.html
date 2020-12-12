@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NAND GATE</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+
+    <div class="dropdown" style="left:40px; top:50px;">
+    <button onclick="dropdown()" class="dropbtn">INSTRUCTIONS</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#home"><b>1) Enter the Boolean input "A" and "B".</b><br/><br/>
+                        <b>2) Enter the Boolean output for your corresponding inputs.</b><br/><br/>
+                        <b>3) Click on "Check" Button to verify your output.</b><br/><br/>
+                        <b>4) Click "Print" if you want to get print out of Truth Table.</b><br/><br/>
+
+
+
+                        </a>
+    </div>
+    </div>
+
+
+    <div id="wrapper">
+      <div class="name" > <b class="heading">Verification of truth table for NAND gate</b>
+                    </div>
+    <form id="myForm">
+    <div class="andGate">
+      <table  width="0%" border="0" >
+        <tr>
+          <td>
+             <input type = "text" size="5" min="0" maxlength="1" name="myinputA" onkeyup="checkmyinput()" id="A"/></td>
+           </tr>
+
+           <tr>
+           </tr>
+    <tr>
+           </tr>
+           <tr>
+           </tr>
+           <tr>
+           </tr>
+           <tr>
+           </tr>
+           <tr>
+           </tr>
+           <tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr><tr>
+           </tr>
+           <tr>
+          <td>
+             <input type = "text"  size="5" min="0" maxlength="1" name="myinputB" onkeyup="checkmyinputB()" id="B"/></td>
+           </tr>
+         </table>
+       </div>
+    <div class="Reset">
+
+    <button class="ResetButton"  type="reset" value="Clear"  onclick="clearForm()">Reset</button>
+    </div>
+
+    <div style="position:absolute;left:310px;top:110px;">
+    <table width="0%" border="0">
+    <tr>
+          <td>
+             <img src="images/nandgate.png"  width="550" height="200"/>
+           </td>
+           </tr>
+    </table>
+    </div>
+
+    <div style="position:absolute;left:870px;top:200px;">
+      <table width="0%" border="1">
+        <tr>
+          <td>
+             <input type = "text" size="5" min="0" maxlength="1" name="myinputZ" onkeyup="checkmyinputZ()" id="Z"/></td>
+           </tr>
+            <tr>
+           <td><label><input  id = "checkButton" type = "button" value = "Check" onclick="AddDataNAND()"></label></td>
+           </tr>
+
+    </table>
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="tblwrap">
+              <div class="TT"><p style=" color:white">
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRUTH TABLE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp; &nbsp;&nbsp; <input id = "pr" type = "button" value = " Print  " onclick="print()"></p>
+                </div>
+
+                    <div id="table">
+
+                        <table id="mytable" >
+
+<thead>
+  <tr>
+      <th class="serial" width="15">Serial No.</th>
+      <th width="25">A</th>
+      <th width="25">B</th>
+      <th width="15">Output</th>
+      <th width="25" id="R">Remarks</th>
+
+
+
+
+      <!-- <th>load(Watt)</th>-->
+  </tr>
+</thead>
+
+
+                        </table>
+                        </div>
+                        <!-- <table id="mytable" border="1" >
+                        </table> --></div>
+                        </form>
+
+                    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+<script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
